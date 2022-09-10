@@ -8,12 +8,15 @@ function checkIsTriangle()
 {   
     if(angle1.value && angle2.value && angle3.value)
     {
-    const sum= Number(angle1.value) + Number(angle2.value) + Number(angle3.value);
-    
-    if(sum==180 && angle2.value>0 && angle1.value>0 && angle3.value>0)
-    outputBoxArea.innerText="It is a triangle";
+    var sum= ((Number(angle1.value)+Number(angle2.value)+Number(angle3.value))/2);
+    console.log(sum);
+    var total=(sum*(sum-Number(angle1.value))*(sum-Number(angle2.value))*(sum-Number(angle3.value)));
+    console.log(total);
+    var area = Math.sqrt(total);
+    if(angle2.value>0 && angle1.value>0 && angle3.value>0)
+    outputBoxArea.innerText="The Area of Triangle  is " + area.toFixed(2);
     else
-    {outputBoxArea.innerText="It is not a triangle";}
+    {outputBoxArea.innerText="Please Enter Right Values";}
 }
 else
 {
