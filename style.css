@@ -11,7 +11,6 @@ header{
     background-color: #023e8a;
      color: white;
      padding: 1rem auto;
-     
      overflow: hidden;
      border-radius: 0.5rem;
     }
@@ -24,9 +23,9 @@ header h1{
     text-align: left;
 }
 span a{
-    font-size: 1.5rem;
-    
-    margin-left: 2rem;
+    font-size: 1rem;
+    padding: 10px 10px;
+    margin-left: auto;
     font-weight: bold;
     color: white;
     text-decoration: none;
@@ -34,11 +33,13 @@ span a{
 .quiz-head{
 padding-right: 10px;
 padding-bottom: 10px;   
+padding: 10px 10px;
     text-align: right;
 }
 .container{
 text-align: center;
 display: block}
+
 h1{
     font-size: 60px;
     text-align: center;
