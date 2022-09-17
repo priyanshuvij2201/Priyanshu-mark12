@@ -18,9 +18,9 @@ let index=0;
 const formResults = new FormData(formout);
 for(let value of formResults.values()){
     console.log(value);
-    if(value === correctAnswers[index])
-    score=score+1;
-    index++;
+    if(value === correctAnswers[index]){
+    score=score+1;}
+    index=index+1;
 
 }
 console.log(score);
